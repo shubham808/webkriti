@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="icon" type="image/jpg" href="images/logo.jpg">
+    <title>
+        Register
+    </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--google font-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <!--footer stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/footer-distributed-with-address-and-phones.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="font-family: Lobster;">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" id="slidingmenu">
+                <li class="sidebar-brand" style="margin-bottom: 60px;">
+                    <a href="#" style="font-size: 40px;">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="events.php">About Competetion</a>
+                </li>
+                <li>
+                    <a href="contacts.php">Agenda</a>
+                </li>
+                <li>
+                    <a href="about.php">Prizes</a>
+                </li>
+                <li>
+                    <a href="about.php">Sponsers</a>
+                </li>
+                <li>
+                    <a href="about.php">Partners</a>
+                </li>
+                <li>
+                    <a href="about.php">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" id="menu-toggle" style="color: white;"><img src="images/menulogo.jpg" id="menuLogo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+        
+<div id="signupform">
+<form action="store.php" method="POST"  enctype="multipart/form-data" onsubmit="final()">
+                <header style="text-align: center;">
+                    <h3>Register......</h3><hr>
+                </header>
+                <input type="file" class="form-control input-lg" name="image" id="pic" ><br>
+                Name:<br>
+                    <input type="text" name="first" id="first" class="form-control input-lg" placeholder="first name" onkeyup="firs()"><br>
+
+                       <label id="flabel"></label> 
+
+                    <input type="text" name="last" id="last" class="form-control input-lg" placeholder="last name" onkeyup="las()"><br>
+                        <label id="llabel"></label>
+                Email:  <input type="text" name="email" id="emaill" placeholder="email@example.com" onkeyup="mail()" class="form-control input-lg">
+
+                <label id="eprompt"></label>
+
+                <script type="text/javascript" src="valid.js"></script><br>
+
+                Roll number:
+                          <input type="text" name="username" id="username" class="form-control input-lg" placeholder=" ipg_2015118" onkeyup="usernam()">
+
+                          <label id="uprompt"></label><br>
+                Password:
+                          <input type="password" name="password" id="password" class="form-control input-lg" placeholder=" password" onkeyup="pass()">
+
+                          <label id="pass"></label><br>  
+                <input type="button" value="register" id="submit" class="btn btn-success" style="float: right;">
+
+</form>
+</div>
+         
+
+
+
+
+
+<!--
+<video autoplay  poster="" id="bgvid" loop> 
+
+  
+<source src="assets/video/bgvid.mp4" type="video/mp4">
+</video>
+-->
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <!--video background-->
+   
+    
+
+
+</body>
+
+</html>
